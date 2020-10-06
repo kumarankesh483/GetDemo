@@ -1,0 +1,72 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 9,
+        "name": "User is entering correct credentials",
+        "description": "",
+        "id": "to-test-the-login-feature-of-facebook;user-is-entering-correct-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9823930685,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User is on the landing page",
+            "match": {
+              "location": "StepDefinitionClass.user_is_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 999891298,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user enters 7205574865 and 9304133712 credentials",
+            "match": {
+              "arguments": [
+                {
+                  "val": "7205574865",
+                  "offset": 12
+                },
+                {
+                  "val": "9304133712",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitionClass.user_enters_and_credentials(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7700223095,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is now on the home page",
+            "match": {
+              "location": "StepDefinitionClass.user_is_now_on_the_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "To test the login feature of facebook",
+    "description": "",
+    "id": "to-test-the-login-feature-of-facebook",
+    "keyword": "Feature",
+    "uri": "src/test/java/Features/loginParameterization.feature"
+  }
+]
